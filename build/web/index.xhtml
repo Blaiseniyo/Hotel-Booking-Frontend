@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+                <!-- Favicon -->
+<link rel="stylesheet" type="text/css" href="assets/login/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/fontawesome-all.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/tit_school.css" />
+        <title>HOTEL BOOKING - LOGIN</title>
+    </h:head>
+    <h:body>
+    <div class="form-body">
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <h3>Connect with your Account</h3>
+                    <p>HBS combines more features in one powerful tool , here is what it offers :</p><br />
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Get connected now</h3>
+                        <p>Enter your account credentials to continue</p>
+                        <h:form id="userLoginform">
+                            <h:inputText value="#{BB.user.email}" />
+                            <h:inputSecret value="#{BB.user.password}" />
+                            <div class="form-button">
+                            <h:commandButton class="ibtn" action="#{BB.aunthenticate()}" value="save" />
+                            </div>| or <a href="LandingPage.html">Back to home</a>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+            <script src="assets/homepage/js/jquery.min.js"></script>
+<script src="assets/homepage/js/bootstrap.min.js"></script>
+<script src="assets/homepage/js/jquery.easing.min.js"></script>
+<script src="assets/homepage/js/lity.min.js"></script>
+<script src="assets/homepage/js/custom.js"></script>
+    </h:body>
+</html>
+
